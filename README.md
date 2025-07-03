@@ -64,4 +64,9 @@ A modern, responsive task management application built with React.js featuring u
 npm run build
 ```
 
+### Deployed URL
+```
+react-task-tracker80.netlify.app
+```
+
 This creates an optimized production build in the `build` folder.
