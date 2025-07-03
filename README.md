@@ -41,7 +41,7 @@ A modern, responsive task management application built with React.js featuring u
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/parasmahla1/task-tracker-assignment.git
    cd task-tracker
    ```
 
