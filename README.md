@@ -23,6 +23,13 @@ A modern, responsive task management application built with React.js featuring u
   - Automatic data restoration on page refresh
   - Sample data initialization for new users
 
+## Screenshots
+
+### Login Page
+![Task Tracker - Login Page](./public/image1.png)
+
+### Main Page
+![Task Tracker - Main Page](./public/image2.png)
 
 ## Tech Stack
 
@@ -68,5 +75,7 @@ npm run build
 ```
 react-task-tracker80.netlify.app
 ```
+
+
 
 This creates an optimized production build in the `build` folder.
