@@ -1,0 +1,46 @@
+.dark-mode-toggle {
+  background: #f8f9fa;
+  border: 2px solid #e1e5e9;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  margin-left: 12px;
+}
+
+.dark-mode-toggle:hover {
+  background: #e9ecef;
+  border-color: #ced4da;
+  transform: scale(1.1);
+}
+
+.dark-mode-toggle.dark {
+  background: #495057;
+  border-color: #6c757d;
+  color: white;
+}
+
+.dark-mode-toggle.dark:hover {
+  background: #6c757d;
+  border-color: #868e96;
+}
+
+.toggle-icon {
+  line-height: 1;
+  display: block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .dark-mode-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,116 @@
+.task-filter {
+  margin-bottom: 24px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: white;
+  border: 2px solid #e1e5e9;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-width: 120px;
+  justify-content: center;
+}
+
+.filter-button:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.filter-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.filter-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.filter-label {
+  font-weight: 600;
+}
+
+.filter-count {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
+}
+
+.filter-button:not(.active) .filter-count {
+  background: #f8f9fa;
+  color: #666;
+}
+
+/* Dark Mode Styles */
+.App.dark-mode .filter-button {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.App.dark-mode .filter-button:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.App.dark-mode .filter-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: #667eea;
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.App.dark-mode .filter-button:not(.active) .filter-count {
+  background: #4a5568;
+  color: #a0aec0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .filter-buttons {
+    gap: 8px;
+  }
+  
+  .filter-button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .filter-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
