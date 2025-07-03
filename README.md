@@ -42,7 +42,7 @@ A modern, responsive task management application built with React.js featuring u
 1. **Clone the repository**
    ```bash
    git clone https://github.com/parasmahla1/task-tracker-assignment.git
-   cd task-tracker
+   cd task-tracker-assignment
    ```
 
 2. **Install dependencies**
